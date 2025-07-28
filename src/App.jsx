@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Calendar, MapPin, Star, Loader2 } from 'lucide-react';
 
-const API_BASE_URL = 'https://elite-production-46dc.up.railway.app/api'
+const API_BASE_URL = 'https://elite-production-46dc.up.railway.app/'
   
   //process.env.NODE_ENV === 'production' 
   //? 'https://elite-production-46dc.up.railway.app/api'  // Your Railway URL
