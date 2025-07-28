@@ -1,20 +1,22 @@
-# React + Vite
+## South East London Elite Running And Breakfast Association
+Build an app to replace the current spreadsheet used for rating and ranking the parkruns and greasy spoon cafes
+Essential:
+- Create an event with parkrun location, cafe name, and date
+- Rank event based on 5 criteria parkrun ease, parkrun vibes, cafe vibes, cafe price, cafe portion
+- Save event in backend so that it isn't lost when restarting/refreshing
+Spreadsheet with scores **https://docs.google.com/spreadsheets/d/1yioSSFopIctYuiEoXnjaBsXZFicQ9lRNoGUIwbZ2MW4/edit?usp=sharing**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Future developments:
+- Leaderboard with parkruns completed in SELERBA
+- Improve UI to match the colour scheme of the t-shirts
+- Allow pictures/album to be added
+- ...
+- ...
 
-Currently, two official plugins are available:
+## Front
+**https://matalan387.github.io/elite/** 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-##Testing Frontend
-https://matalan387.github.io/elite/
-
-
-## Testing Backend
+## Back
 **https://elite-production-46dc.up.railway.app** test API is running
+
 **https://elite-production-46dc.up.railway.app/api/events** test events endpoint
