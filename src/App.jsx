@@ -124,11 +124,13 @@ const GreasySpoonApp = () => {
         max="10"
         value={value}
         onChange={(e) => onChange(criteria, parseInt(e.target.value))}
-        className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+        // className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+        className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-cyan-500"
+
       />
       <div className="flex justify-between text-xs text-gray-500 mt-1">
-        <span>1</span>
-        <span>10</span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   );
@@ -149,8 +151,8 @@ const GreasySpoonApp = () => {
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
         <div className="max-w-4xl mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-gray-900">Greasy Spoon Events</h1>
-          <p className="text-gray-600 mt-2">Rate your local greasy spoon experiences</p>
+          <h1 className="text-3xl font-bold text-purple-100">Elite Running and Breakfast Association</h1>
+          <p className="text-cyan-600 mt-2">Rate the parkrun and greasy spoon experience</p>
         </div>
       </div>
 
@@ -174,20 +176,20 @@ const GreasySpoonApp = () => {
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Event Name
+                  Parkrun Location
                 </label>
                 <input
                   type="text"
                   value={newEvent.name}
                   onChange={(e) => setNewEvent({...newEvent, name: e.target.value})}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Sunday Breakfast Meetup"
+                  placeholder="Hilly Fields"
                   disabled={submitting}
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Greasy Spoon Name
+                  Greasy Spoon
                 </label>
                 <input
                   type="text"
@@ -274,7 +276,7 @@ const GreasySpoonApp = () => {
                 {/* Ratings Display */}
                 <div className="grid md:grid-cols-2 gap-6 mt-6">
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-3">Event Ratings</h4>
+                    <h4 className="font-semibold text-gray-900 mb-3">Parkrun Ratings</h4>
                     <div className="space-y-2">
                       <div className="flex justify-between">
                         <span className="text-gray-600">Ease:</span>
@@ -357,7 +359,7 @@ const GreasySpoonApp = () => {
                 
                 <div>
                   <div className="mb-6">
-                    <h3 className="font-semibold text-gray-900 mb-4">Event</h3>
+                    <h3 className="font-semibold text-gray-900 mb-4">Parkrun</h3>
                     <RatingSlider
                       label="Ease"
                       value={rating.eventEase}
